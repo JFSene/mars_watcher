@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="33r-lF-f0K">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mars Rovers Photos-->
+        <scene sceneID="Aa2-su-yvv">
+            <objects>
+                <viewController storyboardIdentifier="ImagesCollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BNb-m1-y8c" customClass="ImagesCollectionViewController" customModule="MarsWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eP9-JY-0tt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LWe-WX-pb7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="29"/>
+                                <segments>
+                                    <segment title="Curiosity"/>
+                                    <segment title="Opportunitty"/>
+                                    <segment title="Spirit"/>
+                                </segments>
+                                <connections>
+                                    <action selector="indexChange:" destination="BNb-m1-y8c" eventType="valueChanged" id="MzY-eV-Jim"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtz-LH-rOf">
+                                <rect key="frame" x="30" y="132" width="315" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1PU-W9-opX">
+                                <rect key="frame" x="30" y="192.5" width="315" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Bz9-Zo-geR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cnc-3U-OXe" firstAttribute="trailing" secondItem="LWe-WX-pb7" secondAttribute="trailing" id="4Xn-d6-f0W"/>
+                            <constraint firstItem="Wtz-LH-rOf" firstAttribute="leading" secondItem="Cnc-3U-OXe" secondAttribute="leading" constant="30" id="54H-pJ-DEq"/>
+                            <constraint firstItem="1PU-W9-opX" firstAttribute="top" secondItem="Wtz-LH-rOf" secondAttribute="bottom" constant="40" id="9VX-sH-Gge"/>
+                            <constraint firstItem="Wtz-LH-rOf" firstAttribute="top" secondItem="LWe-WX-pb7" secondAttribute="bottom" constant="40" id="DQy-cV-xi6"/>
+                            <constraint firstItem="LWe-WX-pb7" firstAttribute="top" secondItem="Cnc-3U-OXe" secondAttribute="top" id="Enh-nr-SLP"/>
+                            <constraint firstItem="Wtz-LH-rOf" firstAttribute="centerX" secondItem="eP9-JY-0tt" secondAttribute="centerX" id="OPs-RW-xdl"/>
+                            <constraint firstItem="1PU-W9-opX" firstAttribute="centerX" secondItem="eP9-JY-0tt" secondAttribute="centerX" id="YTv-v0-uvf"/>
+                            <constraint firstItem="Cnc-3U-OXe" firstAttribute="trailing" secondItem="Wtz-LH-rOf" secondAttribute="trailing" constant="30" id="coy-1m-2Wy"/>
+                            <constraint firstItem="Cnc-3U-OXe" firstAttribute="trailing" secondItem="1PU-W9-opX" secondAttribute="trailing" constant="30" id="flo-rE-YBB"/>
+                            <constraint firstItem="1PU-W9-opX" firstAttribute="leading" secondItem="Cnc-3U-OXe" secondAttribute="leading" constant="30" id="vHZ-Fu-L53"/>
+                            <constraint firstItem="LWe-WX-pb7" firstAttribute="leading" secondItem="Cnc-3U-OXe" secondAttribute="leading" id="vqX-gp-B9z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cnc-3U-OXe"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mars Rovers Photos" id="Wwx-wZ-QBe"/>
+                    <connections>
+                        <outlet property="marsImage" destination="1PU-W9-opX" id="aGl-g9-X1m"/>
+                        <outlet property="segControl" destination="LWe-WX-pb7" id="CG3-H0-Kry"/>
+                        <outlet property="textLabel" destination="Wtz-LH-rOf" id="Pmv-df-8cS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZO-yg-qQp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="810" y="-158"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dTO-5d-MNa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="33r-lF-f0K" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yt0-fW-Q4e">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BNb-m1-y8c" kind="relationship" relationship="rootViewController" id="idd-mv-8hl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="omJ-ey-qga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.800000000000001" y="-157.87106446776613"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40BB2BBA141B9B268D1694AB /* Pods_MarsWatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A110B87B44EA71CE3256D8 /* Pods_MarsWatchUITests.framework */; };
+		63CBB1A62271FAE500FD1A94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1A52271FAE500FD1A94 /* AppDelegate.swift */; };
+		63CBB1A82271FAE500FD1A94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1A72271FAE500FD1A94 /* ViewController.swift */; };
+		63CBB1AB2271FAE500FD1A94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CBB1A92271FAE500FD1A94 /* Main.storyboard */; };
+		63CBB1AE2271FAE500FD1A94 /* MarsWatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1AC2271FAE500FD1A94 /* MarsWatch.xcdatamodeld */; };
+		63CBB1B02271FAE700FD1A94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63CBB1AF2271FAE700FD1A94 /* Assets.xcassets */; };
+		63CBB1B32271FAE700FD1A94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CBB1B12271FAE700FD1A94 /* LaunchScreen.storyboard */; };
+		63CBB1BE2271FAE700FD1A94 /* MarsWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1BD2271FAE700FD1A94 /* MarsWatchTests.swift */; };
+		63CBB1C92271FAE700FD1A94 /* MarsWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1C82271FAE700FD1A94 /* MarsWatchUITests.swift */; };
+		63CBB1F02271FEE400FD1A94 /* ImagesCollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1EA2271FEE400FD1A94 /* ImagesCollectionPresenter.swift */; };
+		63CBB1F12271FEE400FD1A94 /* ImagesCollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1EA2271FEE400FD1A94 /* ImagesCollectionPresenter.swift */; };
+		63CBB1F22271FEE400FD1A94 /* ImagesCollectionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1EB2271FEE400FD1A94 /* ImagesCollectionWorker.swift */; };
+		63CBB1F32271FEE400FD1A94 /* ImagesCollectionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1EB2271FEE400FD1A94 /* ImagesCollectionWorker.swift */; };
+		63CBB1F42271FEE400FD1A94 /* ImagesCollectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1EC2271FEE400FD1A94 /* ImagesCollectionRouter.swift */; };
+		63CBB1F52271FEE400FD1A94 /* ImagesCollectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1EC2271FEE400FD1A94 /* ImagesCollectionRouter.swift */; };
+		63CBB1F62271FEE400FD1A94 /* ImagesCollectionModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1ED2271FEE400FD1A94 /* ImagesCollectionModels.swift */; };
+		63CBB1F72271FEE400FD1A94 /* ImagesCollectionModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1ED2271FEE400FD1A94 /* ImagesCollectionModels.swift */; };
+		63CBB1F82271FEE400FD1A94 /* ImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1EE2271FEE400FD1A94 /* ImagesCollectionViewController.swift */; };
+		63CBB1F92271FEE400FD1A94 /* ImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1EE2271FEE400FD1A94 /* ImagesCollectionViewController.swift */; };
+		63CBB1FA2271FEE400FD1A94 /* ImagesCollectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1EF2271FEE400FD1A94 /* ImagesCollectionInteractor.swift */; };
+		63CBB1FB2271FEE400FD1A94 /* ImagesCollectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1EF2271FEE400FD1A94 /* ImagesCollectionInteractor.swift */; };
+		63CBB1FE22721A2400FD1A94 /* UserDefaults+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1FD22721A2400FD1A94 /* UserDefaults+Properties.swift */; };
+		63CBB1FF22721A2400FD1A94 /* UserDefaults+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1FD22721A2400FD1A94 /* UserDefaults+Properties.swift */; };
+		63CBB20222721A6E00FD1A94 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB20122721A6E00FD1A94 /* Photos.swift */; };
+		63CBB20322721A6E00FD1A94 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB20122721A6E00FD1A94 /* Photos.swift */; };
+		63CBB20822721AEB00FD1A94 /* CodableParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB20722721AEB00FD1A94 /* CodableParser.swift */; };
+		63CBB20922721AEB00FD1A94 /* CodableParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB20722721AEB00FD1A94 /* CodableParser.swift */; };
+		63CBB20D22721BC100FD1A94 /* GenericRouterEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB20C22721BC100FD1A94 /* GenericRouterEnum.swift */; };
+		63CBB20E22721BC100FD1A94 /* GenericRouterEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB20C22721BC100FD1A94 /* GenericRouterEnum.swift */; };
+		63CBB21022721BE900FD1A94 /* RequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB20F22721BE900FD1A94 /* RequestAdapter.swift */; };
+		63CBB21122721BE900FD1A94 /* RequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB20F22721BE900FD1A94 /* RequestAdapter.swift */; };
+		63CBB21322721C3000FD1A94 /* GenericRequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB21222721C3000FD1A94 /* GenericRequestRetrier.swift */; };
+		63CBB21422721C3000FD1A94 /* GenericRequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB21222721C3000FD1A94 /* GenericRequestRetrier.swift */; };
+		63CBB21722721C7200FD1A94 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB21622721C7200FD1A94 /* WebService.swift */; };
+		63CBB21822721C7200FD1A94 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB21622721C7200FD1A94 /* WebService.swift */; };
+		63CBB21A22721CF900FD1A94 /* PhotosWebSerivce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB21922721CF900FD1A94 /* PhotosWebSerivce.swift */; };
+		63CBB21B22721CF900FD1A94 /* PhotosWebSerivce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB21922721CF900FD1A94 /* PhotosWebSerivce.swift */; };
+		BC48CBE7A3C4020AF2279CAE /* Pods_MarsWatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBBE5CA5183ED23313D3406 /* Pods_MarsWatchTests.framework */; };
+		FD35FF6A1069A925B1972B05 /* Pods_MarsWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C96B3C08453D562D2AD3A3 /* Pods_MarsWatch.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63CBB1BA2271FAE700FD1A94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63CBB19A2271FAE500FD1A94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63CBB1A12271FAE500FD1A94;
+			remoteInfo = MarsWatch;
+		};
+		63CBB1C52271FAE700FD1A94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63CBB19A2271FAE500FD1A94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63CBB1A12271FAE500FD1A94;
+			remoteInfo = MarsWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18C96B3C08453D562D2AD3A3 /* Pods_MarsWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34A110B87B44EA71CE3256D8 /* Pods_MarsWatchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsWatchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E76563EFB9759529264F107 /* Pods-MarsWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsWatch.debug.xcconfig"; path = "Target Support Files/Pods-MarsWatch/Pods-MarsWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		63CBB1A22271FAE500FD1A94 /* MarsWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63CBB1A52271FAE500FD1A94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63CBB1A72271FAE500FD1A94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63CBB1AA2271FAE500FD1A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63CBB1AD2271FAE500FD1A94 /* MarsWatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarsWatch.xcdatamodel; sourceTree = "<group>"; };
+		63CBB1AF2271FAE700FD1A94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63CBB1B22271FAE700FD1A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63CBB1B42271FAE700FD1A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63CBB1B92271FAE700FD1A94 /* MarsWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63CBB1BD2271FAE700FD1A94 /* MarsWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWatchTests.swift; sourceTree = "<group>"; };
+		63CBB1BF2271FAE700FD1A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63CBB1C42271FAE700FD1A94 /* MarsWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63CBB1C82271FAE700FD1A94 /* MarsWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWatchUITests.swift; sourceTree = "<group>"; };
+		63CBB1CA2271FAE700FD1A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63CBB1EA2271FEE400FD1A94 /* ImagesCollectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionPresenter.swift; sourceTree = "<group>"; };
+		63CBB1EB2271FEE400FD1A94 /* ImagesCollectionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionWorker.swift; sourceTree = "<group>"; };
+		63CBB1EC2271FEE400FD1A94 /* ImagesCollectionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionRouter.swift; sourceTree = "<group>"; };
+		63CBB1ED2271FEE400FD1A94 /* ImagesCollectionModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionModels.swift; sourceTree = "<group>"; };
+		63CBB1EE2271FEE400FD1A94 /* ImagesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewController.swift; sourceTree = "<group>"; };
+		63CBB1EF2271FEE400FD1A94 /* ImagesCollectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionInteractor.swift; sourceTree = "<group>"; };
+		63CBB1FD22721A2400FD1A94 /* UserDefaults+Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Properties.swift"; sourceTree = "<group>"; };
+		63CBB20122721A6E00FD1A94 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		63CBB20722721AEB00FD1A94 /* CodableParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableParser.swift; sourceTree = "<group>"; };
+		63CBB20C22721BC100FD1A94 /* GenericRouterEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericRouterEnum.swift; sourceTree = "<group>"; };
+		63CBB20F22721BE900FD1A94 /* RequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAdapter.swift; sourceTree = "<group>"; };
+		63CBB21222721C3000FD1A94 /* GenericRequestRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericRequestRetrier.swift; sourceTree = "<group>"; };
+		63CBB21622721C7200FD1A94 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		63CBB21922721CF900FD1A94 /* PhotosWebSerivce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosWebSerivce.swift; sourceTree = "<group>"; };
+		8786670264C82D381D07CCE8 /* Pods-MarsWatchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsWatchUITests.debug.xcconfig"; path = "Target Support Files/Pods-MarsWatchUITests/Pods-MarsWatchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BBBE5CA5183ED23313D3406 /* Pods_MarsWatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsWatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C158953F794AD002EEBDB7DB /* Pods-MarsWatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsWatchTests.debug.xcconfig"; path = "Target Support Files/Pods-MarsWatchTests/Pods-MarsWatchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EECF6AC207A67D4D536719B7 /* Pods-MarsWatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsWatchTests.release.xcconfig"; path = "Target Support Files/Pods-MarsWatchTests/Pods-MarsWatchTests.release.xcconfig"; sourceTree = "<group>"; };
+		F550E80E8F92CCD9509D3EAA /* Pods-MarsWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsWatch.release.xcconfig"; path = "Target Support Files/Pods-MarsWatch/Pods-MarsWatch.release.xcconfig"; sourceTree = "<group>"; };
+		FD82389EF8D384E24AD2D19F /* Pods-MarsWatchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsWatchUITests.release.xcconfig"; path = "Target Support Files/Pods-MarsWatchUITests/Pods-MarsWatchUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63CBB19F2271FAE500FD1A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD35FF6A1069A925B1972B05 /* Pods_MarsWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63CBB1B62271FAE700FD1A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC48CBE7A3C4020AF2279CAE /* Pods_MarsWatchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63CBB1C12271FAE700FD1A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BB2BBA141B9B268D1694AB /* Pods_MarsWatchUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63CBB1992271FAE500FD1A94 = {
+			isa = PBXGroup;
+			children = (
+				63CBB1A42271FAE500FD1A94 /* MarsWatch */,
+				63CBB1BC2271FAE700FD1A94 /* MarsWatchTests */,
+				63CBB1C72271FAE700FD1A94 /* MarsWatchUITests */,
+				63CBB1A32271FAE500FD1A94 /* Products */,
+				D1FBFBFE81314C2FE9EC12B5 /* Pods */,
+				8E1A5B6E4E7F38A93A1D0F7B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63CBB1A32271FAE500FD1A94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB1A22271FAE500FD1A94 /* MarsWatch.app */,
+				63CBB1B92271FAE700FD1A94 /* MarsWatchTests.xctest */,
+				63CBB1C42271FAE700FD1A94 /* MarsWatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63CBB1A42271FAE500FD1A94 /* MarsWatch */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB20A22721B4A00FD1A94 /* Services */,
+				63CBB20422721AB700FD1A94 /* Resources */,
+				63CBB20022721A4300FD1A94 /* Models */,
+				63CBB1FC22721A0000FD1A94 /* Extensions */,
+				63CBB1D62271FC3800FD1A94 /* Scenes */,
+				63CBB1A52271FAE500FD1A94 /* AppDelegate.swift */,
+				63CBB1A72271FAE500FD1A94 /* ViewController.swift */,
+				63CBB1A92271FAE500FD1A94 /* Main.storyboard */,
+				63CBB1AF2271FAE700FD1A94 /* Assets.xcassets */,
+				63CBB1B12271FAE700FD1A94 /* LaunchScreen.storyboard */,
+				63CBB1B42271FAE700FD1A94 /* Info.plist */,
+				63CBB1AC2271FAE500FD1A94 /* MarsWatch.xcdatamodeld */,
+			);
+			path = MarsWatch;
+			sourceTree = "<group>";
+		};
+		63CBB1BC2271FAE700FD1A94 /* MarsWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB1BD2271FAE700FD1A94 /* MarsWatchTests.swift */,
+				63CBB1BF2271FAE700FD1A94 /* Info.plist */,
+			);
+			path = MarsWatchTests;
+			sourceTree = "<group>";
+		};
+		63CBB1C72271FAE700FD1A94 /* MarsWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB1C82271FAE700FD1A94 /* MarsWatchUITests.swift */,
+				63CBB1CA2271FAE700FD1A94 /* Info.plist */,
+			);
+			path = MarsWatchUITests;
+			sourceTree = "<group>";
+		};
+		63CBB1D62271FC3800FD1A94 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB1D72271FC4400FD1A94 /* ImagesCollection */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		63CBB1D72271FC4400FD1A94 /* ImagesCollection */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB1EA2271FEE400FD1A94 /* ImagesCollectionPresenter.swift */,
+				63CBB1EB2271FEE400FD1A94 /* ImagesCollectionWorker.swift */,
+				63CBB1EC2271FEE400FD1A94 /* ImagesCollectionRouter.swift */,
+				63CBB1ED2271FEE400FD1A94 /* ImagesCollectionModels.swift */,
+				63CBB1EE2271FEE400FD1A94 /* ImagesCollectionViewController.swift */,
+				63CBB1EF2271FEE400FD1A94 /* ImagesCollectionInteractor.swift */,
+			);
+			path = ImagesCollection;
+			sourceTree = "<group>";
+		};
+		63CBB1FC22721A0000FD1A94 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB1FD22721A2400FD1A94 /* UserDefaults+Properties.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		63CBB20022721A4300FD1A94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB20122721A6E00FD1A94 /* Photos.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		63CBB20422721AB700FD1A94 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB20522721ACC00FD1A94 /* Helper */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		63CBB20522721ACC00FD1A94 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB20622721AD400FD1A94 /* Codable Parser */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		63CBB20622721AD400FD1A94 /* Codable Parser */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB20722721AEB00FD1A94 /* CodableParser.swift */,
+			);
+			path = "Codable Parser";
+			sourceTree = "<group>";
+		};
+		63CBB20A22721B4A00FD1A94 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB21522721C5A00FD1A94 /* WebService */,
+				63CBB20B22721BA200FD1A94 /* Helpers */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		63CBB20B22721BA200FD1A94 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB20C22721BC100FD1A94 /* GenericRouterEnum.swift */,
+				63CBB20F22721BE900FD1A94 /* RequestAdapter.swift */,
+				63CBB21222721C3000FD1A94 /* GenericRequestRetrier.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		63CBB21522721C5A00FD1A94 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB21622721C7200FD1A94 /* WebService.swift */,
+				63CBB21922721CF900FD1A94 /* PhotosWebSerivce.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		8E1A5B6E4E7F38A93A1D0F7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18C96B3C08453D562D2AD3A3 /* Pods_MarsWatch.framework */,
+				9BBBE5CA5183ED23313D3406 /* Pods_MarsWatchTests.framework */,
+				34A110B87B44EA71CE3256D8 /* Pods_MarsWatchUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1FBFBFE81314C2FE9EC12B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E76563EFB9759529264F107 /* Pods-MarsWatch.debug.xcconfig */,
+				F550E80E8F92CCD9509D3EAA /* Pods-MarsWatch.release.xcconfig */,
+				C158953F794AD002EEBDB7DB /* Pods-MarsWatchTests.debug.xcconfig */,
+				EECF6AC207A67D4D536719B7 /* Pods-MarsWatchTests.release.xcconfig */,
+				8786670264C82D381D07CCE8 /* Pods-MarsWatchUITests.debug.xcconfig */,
+				FD82389EF8D384E24AD2D19F /* Pods-MarsWatchUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63CBB1A12271FAE500FD1A94 /* MarsWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63CBB1CD2271FAE700FD1A94 /* Build configuration list for PBXNativeTarget "MarsWatch" */;
+			buildPhases = (
+				980FB4D061935024C092C295 /* [CP] Check Pods Manifest.lock */,
+				63CBB19E2271FAE500FD1A94 /* Sources */,
+				63CBB19F2271FAE500FD1A94 /* Frameworks */,
+				63CBB1A02271FAE500FD1A94 /* Resources */,
+				38D90513DF2DB0359F427EDD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarsWatch;
+			productName = MarsWatch;
+			productReference = 63CBB1A22271FAE500FD1A94 /* MarsWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63CBB1B82271FAE700FD1A94 /* MarsWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63CBB1D02271FAE700FD1A94 /* Build configuration list for PBXNativeTarget "MarsWatchTests" */;
+			buildPhases = (
+				568470DE9417CA49FDC62659 /* [CP] Check Pods Manifest.lock */,
+				63CBB1B52271FAE700FD1A94 /* Sources */,
+				63CBB1B62271FAE700FD1A94 /* Frameworks */,
+				63CBB1B72271FAE700FD1A94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63CBB1BB2271FAE700FD1A94 /* PBXTargetDependency */,
+			);
+			name = MarsWatchTests;
+			productName = MarsWatchTests;
+			productReference = 63CBB1B92271FAE700FD1A94 /* MarsWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63CBB1C32271FAE700FD1A94 /* MarsWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63CBB1D32271FAE700FD1A94 /* Build configuration list for PBXNativeTarget "MarsWatchUITests" */;
+			buildPhases = (
+				B248361CDFC8CE883916915C /* [CP] Check Pods Manifest.lock */,
+				63CBB1C02271FAE700FD1A94 /* Sources */,
+				63CBB1C12271FAE700FD1A94 /* Frameworks */,
+				63CBB1C22271FAE700FD1A94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63CBB1C62271FAE700FD1A94 /* PBXTargetDependency */,
+			);
+			name = MarsWatchUITests;
+			productName = MarsWatchUITests;
+			productReference = 63CBB1C42271FAE700FD1A94 /* MarsWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63CBB19A2271FAE500FD1A94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = BarbaRuiva;
+				TargetAttributes = {
+					63CBB1A12271FAE500FD1A94 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					63CBB1B82271FAE700FD1A94 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 63CBB1A12271FAE500FD1A94;
+					};
+					63CBB1C32271FAE700FD1A94 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 63CBB1A12271FAE500FD1A94;
+					};
+				};
+			};
+			buildConfigurationList = 63CBB19D2271FAE500FD1A94 /* Build configuration list for PBXProject "MarsWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63CBB1992271FAE500FD1A94;
+			productRefGroup = 63CBB1A32271FAE500FD1A94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63CBB1A12271FAE500FD1A94 /* MarsWatch */,
+				63CBB1B82271FAE700FD1A94 /* MarsWatchTests */,
+				63CBB1C32271FAE700FD1A94 /* MarsWatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63CBB1A02271FAE500FD1A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63CBB1B32271FAE700FD1A94 /* LaunchScreen.storyboard in Resources */,
+				63CBB1B02271FAE700FD1A94 /* Assets.xcassets in Resources */,
+				63CBB1AB2271FAE500FD1A94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63CBB1B72271FAE700FD1A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63CBB1C22271FAE700FD1A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38D90513DF2DB0359F427EDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarsWatch/Pods-MarsWatch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarsWatch/Pods-MarsWatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		568470DE9417CA49FDC62659 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarsWatchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		980FB4D061935024C092C295 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarsWatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B248361CDFC8CE883916915C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarsWatchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63CBB19E2271FAE500FD1A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63CBB1FA2271FEE400FD1A94 /* ImagesCollectionInteractor.swift in Sources */,
+				63CBB20822721AEB00FD1A94 /* CodableParser.swift in Sources */,
+				63CBB1F82271FEE400FD1A94 /* ImagesCollectionViewController.swift in Sources */,
+				63CBB1F02271FEE400FD1A94 /* ImagesCollectionPresenter.swift in Sources */,
+				63CBB20D22721BC100FD1A94 /* GenericRouterEnum.swift in Sources */,
+				63CBB1F62271FEE400FD1A94 /* ImagesCollectionModels.swift in Sources */,
+				63CBB1A82271FAE500FD1A94 /* ViewController.swift in Sources */,
+				63CBB21322721C3000FD1A94 /* GenericRequestRetrier.swift in Sources */,
+				63CBB20222721A6E00FD1A94 /* Photos.swift in Sources */,
+				63CBB1F42271FEE400FD1A94 /* ImagesCollectionRouter.swift in Sources */,
+				63CBB21722721C7200FD1A94 /* WebService.swift in Sources */,
+				63CBB21022721BE900FD1A94 /* RequestAdapter.swift in Sources */,
+				63CBB1F22271FEE400FD1A94 /* ImagesCollectionWorker.swift in Sources */,
+				63CBB1FE22721A2400FD1A94 /* UserDefaults+Properties.swift in Sources */,
+				63CBB1AE2271FAE500FD1A94 /* MarsWatch.xcdatamodeld in Sources */,
+				63CBB1A62271FAE500FD1A94 /* AppDelegate.swift in Sources */,
+				63CBB21A22721CF900FD1A94 /* PhotosWebSerivce.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63CBB1B52271FAE700FD1A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63CBB20322721A6E00FD1A94 /* Photos.swift in Sources */,
+				63CBB20922721AEB00FD1A94 /* CodableParser.swift in Sources */,
+				63CBB21822721C7200FD1A94 /* WebService.swift in Sources */,
+				63CBB1FB2271FEE400FD1A94 /* ImagesCollectionInteractor.swift in Sources */,
+				63CBB1F32271FEE400FD1A94 /* ImagesCollectionWorker.swift in Sources */,
+				63CBB1F12271FEE400FD1A94 /* ImagesCollectionPresenter.swift in Sources */,
+				63CBB1F72271FEE400FD1A94 /* ImagesCollectionModels.swift in Sources */,
+				63CBB1F52271FEE400FD1A94 /* ImagesCollectionRouter.swift in Sources */,
+				63CBB1F92271FEE400FD1A94 /* ImagesCollectionViewController.swift in Sources */,
+				63CBB1BE2271FAE700FD1A94 /* MarsWatchTests.swift in Sources */,
+				63CBB21122721BE900FD1A94 /* RequestAdapter.swift in Sources */,
+				63CBB20E22721BC100FD1A94 /* GenericRouterEnum.swift in Sources */,
+				63CBB21B22721CF900FD1A94 /* PhotosWebSerivce.swift in Sources */,
+				63CBB1FF22721A2400FD1A94 /* UserDefaults+Properties.swift in Sources */,
+				63CBB21422721C3000FD1A94 /* GenericRequestRetrier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63CBB1C02271FAE700FD1A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63CBB1C92271FAE700FD1A94 /* MarsWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63CBB1BB2271FAE700FD1A94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63CBB1A12271FAE500FD1A94 /* MarsWatch */;
+			targetProxy = 63CBB1BA2271FAE700FD1A94 /* PBXContainerItemProxy */;
+		};
+		63CBB1C62271FAE700FD1A94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63CBB1A12271FAE500FD1A94 /* MarsWatch */;
+			targetProxy = 63CBB1C52271FAE700FD1A94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63CBB1A92271FAE500FD1A94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63CBB1AA2271FAE500FD1A94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63CBB1B12271FAE700FD1A94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63CBB1B22271FAE700FD1A94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63CBB1CB2271FAE700FD1A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63CBB1CC2271FAE700FD1A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63CBB1CE2271FAE700FD1A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E76563EFB9759529264F107 /* Pods-MarsWatch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarsWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = barbaruiva.MarsWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63CBB1CF2271FAE700FD1A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F550E80E8F92CCD9509D3EAA /* Pods-MarsWatch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarsWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = barbaruiva.MarsWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63CBB1D12271FAE700FD1A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C158953F794AD002EEBDB7DB /* Pods-MarsWatchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarsWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = barbaruiva.MarsWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarsWatch.app/MarsWatch";
+			};
+			name = Debug;
+		};
+		63CBB1D22271FAE700FD1A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EECF6AC207A67D4D536719B7 /* Pods-MarsWatchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarsWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = barbaruiva.MarsWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarsWatch.app/MarsWatch";
+			};
+			name = Release;
+		};
+		63CBB1D42271FAE700FD1A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8786670264C82D381D07CCE8 /* Pods-MarsWatchUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarsWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = barbaruiva.MarsWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarsWatch;
+			};
+			name = Debug;
+		};
+		63CBB1D52271FAE700FD1A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD82389EF8D384E24AD2D19F /* Pods-MarsWatchUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarsWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = barbaruiva.MarsWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarsWatch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63CBB19D2271FAE500FD1A94 /* Build configuration list for PBXProject "MarsWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63CBB1CB2271FAE700FD1A94 /* Debug */,
+				63CBB1CC2271FAE700FD1A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63CBB1CD2271FAE700FD1A94 /* Build configuration list for PBXNativeTarget "MarsWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63CBB1CE2271FAE700FD1A94 /* Debug */,
+				63CBB1CF2271FAE700FD1A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63CBB1D02271FAE700FD1A94 /* Build configuration list for PBXNativeTarget "MarsWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63CBB1D12271FAE700FD1A94 /* Debug */,
+				63CBB1D22271FAE700FD1A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63CBB1D32271FAE700FD1A94 /* Build configuration list for PBXNativeTarget "MarsWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63CBB1D42271FAE700FD1A94 /* Debug */,
+				63CBB1D52271FAE700FD1A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		63CBB1AC2271FAE500FD1A94 /* MarsWatch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				63CBB1AD2271FAE500FD1A94 /* MarsWatch.xcdatamodel */,
+			);
+			currentVersion = 63CBB1AD2271FAE500FD1A94 /* MarsWatch.xcdatamodel */;
+			path = MarsWatch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 63CBB19A2271FAE500FD1A94 /* Project object */;
+}

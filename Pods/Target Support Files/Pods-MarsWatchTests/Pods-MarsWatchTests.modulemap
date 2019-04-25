@@ -1,0 +1,6 @@
+framework module Pods_MarsWatchTests {
+  umbrella header "Pods-MarsWatchTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
