@@ -14,27 +14,28 @@ import UIKit
 
 protocol ImagesCollectionBusinessLogic
 {
-  func getPhotos(request: ImagesCollection.Photos.Request)
+    func getPhotos(request: ImagesCollection.Photos.Request, earthDate: String, rover: String)
 }
 
 protocol ImagesCollectionDataStore
 {
     var photosCollection: [Photo] { get }
+
 }
 
 class ImagesCollectionInteractor: ImagesCollectionBusinessLogic, ImagesCollectionDataStore
 {
+    
     //VAR`s
   var presenter: ImagesCollectionPresentationLogic?
   var worker: ImagesCollectionWorker?
   var photosCollection: [Photo] = []
-    
   // MARK: Do something
   
-  func getPhotos(request: ImagesCollection.Photos.Request)
+  func getPhotos(request: ImagesCollection.Photos.Request, earthDate: String, rover: String)
   {
     worker = ImagesCollectionWorker()
-    worker?.getPhotos()
+    worker?.getPhotos(rover: rover, earthDate: earthDate)
         .done { result in
             self.photosCollection = result
             let response = ImagesCollection.Photos.Response.Success(photos: result)

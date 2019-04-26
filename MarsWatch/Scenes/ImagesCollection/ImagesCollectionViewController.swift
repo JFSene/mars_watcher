@@ -54,6 +54,7 @@ class ImagesCollectionViewController: UIViewController, ImagesCollectionDisplayL
         presenter.viewController = viewController
         router.viewController = viewController
         router.dataStore = interactor
+        
     }
     
     // MARK: Routing
@@ -73,7 +74,8 @@ class ImagesCollectionViewController: UIViewController, ImagesCollectionDisplayL
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        getPhotoCollection()
+       
+        getPhotoCollection(earthDate: "2015-6-3", rover: "curiosity")
     }
     
     // MARK: Do something
@@ -86,23 +88,28 @@ class ImagesCollectionViewController: UIViewController, ImagesCollectionDisplayL
     
     @IBAction func indexChange(_ sender: UISegmentedControl) {
         switch segControl.selectedSegmentIndex {
-        case 0...3:
-            getPhotoCollection()
+        case 0:
+            getPhotoCollection(earthDate: "2015-6-3", rover: "curiosity")
+        case 1:
+            getPhotoCollection(earthDate: "2015-6-3", rover: "opportunity")
+        case 2:
+            getPhotoCollection(earthDate: "2015-9-10", rover: "spirit")
         default:
             break
         }
     }
     
-    func getPhotoCollection() {
+    func getPhotoCollection(earthDate: String, rover: String) {
         let request = ImagesCollection.Photos.Request()
-        interactor?.getPhotos(request: request)
+        interactor?.getPhotos(request: request, earthDate: earthDate, rover: rover)
     }
     
     
     func successGetPhotosCollection(response: ImagesCollection.Photos.ViewModel.Success) {
         photosCollection = response.items
-        textLabel.text = response.items[0].camera?.fullName
-        marsImage.sd_setImage(with: URL(string: response.items[0].imgSrc!), placeholderImage: UIImage(named: "character"))
+        textLabel.text = response.items.isEmpty ? "Nothing to Show" :  response.items[0].camera?.fullName
+        
+        marsImage.sd_setImage(with: URL(string: response.items.isEmpty ? "" : response.items[0].imgSrc!), placeholderImage: UIImage(named: "character"))
 
         print(photosCollection)
     }

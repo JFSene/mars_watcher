@@ -15,7 +15,7 @@ import PromiseKit
 
 class ImagesCollectionWorker
 {
-    func getPhotos() -> Promise<[Photo]>{
-        return Webservice.GetPhotos.getMarsPhotos()
+    func getPhotos(rover: String, earthDate: String) -> Promise<[Photo]>{
+        return Webservice.GetPhotos.getMarsPhotos(rover: rover, earthDate: earthDate)
   }
 }

@@ -12,6 +12,38 @@ import Alamofire
 import SwiftyJSON
 
 extension Webservice {
+    enum QuerryStrings: GenericRouterEnum {
+        case params(rover: String, earthDate: String)
+        var method: HTTPMethod {
+            switch self {
+            case .params( _):
+                return .get
+            }
+        }
+        
+        var path: String {
+            switch self {
+            case .params(let rover,let earthDate):
+                return "\(rover)/photos=\(earthDate)"
+            }
+        }
+        var parameters: Parameters? {
+            switch self {
+            case .params(_, _):
+                return nil
+            }
+        }
+        
+        var body: Parameters? {
+            switch self {
+            case .params(_ , _):
+                return nil
+            }
+        }
+    }
+}
+
+extension Webservice {
     
     enum GetPhotos { }
     
@@ -19,12 +51,12 @@ extension Webservice {
 
 extension Webservice.GetPhotos {
     
-    static func getMarsPhotos() -> Promise<[Photo]> {
+    static func getMarsPhotos(rover: String, earthDate: String) -> Promise<[Photo]> {
         return Promise.init { seal in
             
             
-            let request = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-6-3&api_key=DEMO_KEY"
-            
+            let request = "https://api.nasa.gov/mars-photos/api/v1/rovers/\(rover)/photos?earth_date=\(earthDate)&api_key=DEMO_KEY"
+            print(request)
             Alamofire.request(request, method: .get).responseJSON(completionHandler: { (response) in
                 
                 guard let statusCode = response.response?.statusCode else {

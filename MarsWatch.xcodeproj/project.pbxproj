@@ -36,8 +36,8 @@
 		63CBB20922721AEB00FD1A94 /* CodableParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB20722721AEB00FD1A94 /* CodableParser.swift */; };
 		63CBB20D22721BC100FD1A94 /* GenericRouterEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB20C22721BC100FD1A94 /* GenericRouterEnum.swift */; };
 		63CBB20E22721BC100FD1A94 /* GenericRouterEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB20C22721BC100FD1A94 /* GenericRouterEnum.swift */; };
-		63CBB21022721BE900FD1A94 /* RequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB20F22721BE900FD1A94 /* RequestAdapter.swift */; };
-		63CBB21122721BE900FD1A94 /* RequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB20F22721BE900FD1A94 /* RequestAdapter.swift */; };
+		63CBB21022721BE900FD1A94 /* GenericRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB20F22721BE900FD1A94 /* GenericRequestAdapter.swift */; };
+		63CBB21122721BE900FD1A94 /* GenericRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB20F22721BE900FD1A94 /* GenericRequestAdapter.swift */; };
 		63CBB21322721C3000FD1A94 /* GenericRequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB21222721C3000FD1A94 /* GenericRequestRetrier.swift */; };
 		63CBB21422721C3000FD1A94 /* GenericRequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB21222721C3000FD1A94 /* GenericRequestRetrier.swift */; };
 		63CBB21722721C7200FD1A94 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB21622721C7200FD1A94 /* WebService.swift */; };
@@ -93,7 +93,7 @@
 		63CBB20122721A6E00FD1A94 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		63CBB20722721AEB00FD1A94 /* CodableParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableParser.swift; sourceTree = "<group>"; };
 		63CBB20C22721BC100FD1A94 /* GenericRouterEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericRouterEnum.swift; sourceTree = "<group>"; };
-		63CBB20F22721BE900FD1A94 /* RequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAdapter.swift; sourceTree = "<group>"; };
+		63CBB20F22721BE900FD1A94 /* GenericRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericRequestAdapter.swift; sourceTree = "<group>"; };
 		63CBB21222721C3000FD1A94 /* GenericRequestRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericRequestRetrier.swift; sourceTree = "<group>"; };
 		63CBB21622721C7200FD1A94 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		63CBB21922721CF900FD1A94 /* PhotosWebSerivce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosWebSerivce.swift; sourceTree = "<group>"; };
@@ -266,7 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				63CBB20C22721BC100FD1A94 /* GenericRouterEnum.swift */,
-				63CBB20F22721BE900FD1A94 /* RequestAdapter.swift */,
+				63CBB20F22721BE900FD1A94 /* GenericRequestAdapter.swift */,
 				63CBB21222721C3000FD1A94 /* GenericRequestRetrier.swift */,
 			);
 			path = Helpers;
@@ -549,7 +549,7 @@
 				63CBB20222721A6E00FD1A94 /* Photos.swift in Sources */,
 				63CBB1F42271FEE400FD1A94 /* ImagesCollectionRouter.swift in Sources */,
 				63CBB21722721C7200FD1A94 /* WebService.swift in Sources */,
-				63CBB21022721BE900FD1A94 /* RequestAdapter.swift in Sources */,
+				63CBB21022721BE900FD1A94 /* GenericRequestAdapter.swift in Sources */,
 				63CBB1F22271FEE400FD1A94 /* ImagesCollectionWorker.swift in Sources */,
 				63CBB1FE22721A2400FD1A94 /* UserDefaults+Properties.swift in Sources */,
 				63CBB1AE2271FAE500FD1A94 /* MarsWatch.xcdatamodeld in Sources */,
@@ -572,7 +572,7 @@
 				63CBB1F52271FEE400FD1A94 /* ImagesCollectionRouter.swift in Sources */,
 				63CBB1F92271FEE400FD1A94 /* ImagesCollectionViewController.swift in Sources */,
 				63CBB1BE2271FAE700FD1A94 /* MarsWatchTests.swift in Sources */,
-				63CBB21122721BE900FD1A94 /* RequestAdapter.swift in Sources */,
+				63CBB21122721BE900FD1A94 /* GenericRequestAdapter.swift in Sources */,
 				63CBB20E22721BC100FD1A94 /* GenericRouterEnum.swift in Sources */,
 				63CBB21B22721CF900FD1A94 /* PhotosWebSerivce.swift in Sources */,
 				63CBB1FF22721A2400FD1A94 /* UserDefaults+Properties.swift in Sources */,
