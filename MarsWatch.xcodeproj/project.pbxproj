@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		40BB2BBA141B9B268D1694AB /* Pods_MarsWatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A110B87B44EA71CE3256D8 /* Pods_MarsWatchUITests.framework */; };
+		6385A9AC2276BAEE0031CF5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6385A9AB2276BAEE0031CF5E /* Assets.xcassets */; };
 		63CBB1A62271FAE500FD1A94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1A52271FAE500FD1A94 /* AppDelegate.swift */; };
 		63CBB1A82271FAE500FD1A94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1A72271FAE500FD1A94 /* ViewController.swift */; };
 		63CBB1AB2271FAE500FD1A94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CBB1A92271FAE500FD1A94 /* Main.storyboard */; };
@@ -88,6 +89,7 @@
 		18C96B3C08453D562D2AD3A3 /* Pods_MarsWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A110B87B44EA71CE3256D8 /* Pods_MarsWatchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsWatchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E76563EFB9759529264F107 /* Pods-MarsWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsWatch.debug.xcconfig"; path = "Target Support Files/Pods-MarsWatch/Pods-MarsWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		6385A9AB2276BAEE0031CF5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63CBB1A22271FAE500FD1A94 /* MarsWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CBB1A52271FAE500FD1A94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63CBB1A72271FAE500FD1A94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				63CBB1A72271FAE500FD1A94 /* ViewController.swift */,
 				63CBB1A92271FAE500FD1A94 /* Main.storyboard */,
 				63CBB1B12271FAE700FD1A94 /* LaunchScreen.storyboard */,
+				6385A9AB2276BAEE0031CF5E /* Assets.xcassets */,
 				63CBB1B42271FAE700FD1A94 /* Info.plist */,
 				63CBB1AC2271FAE500FD1A94 /* MarsWatch.xcdatamodeld */,
 			);
@@ -475,6 +478,7 @@
 			files = (
 				63CBB1B32271FAE700FD1A94 /* LaunchScreen.storyboard in Resources */,
 				63CBB22522734DC100FD1A94 /* PhotosCollectionViewCell.xib in Resources */,
+				6385A9AC2276BAEE0031CF5E /* Assets.xcassets in Resources */,
 				63CBB1AB2271FAE500FD1A94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
