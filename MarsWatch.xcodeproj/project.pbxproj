@@ -12,7 +12,6 @@
 		63CBB1A82271FAE500FD1A94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1A72271FAE500FD1A94 /* ViewController.swift */; };
 		63CBB1AB2271FAE500FD1A94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CBB1A92271FAE500FD1A94 /* Main.storyboard */; };
 		63CBB1AE2271FAE500FD1A94 /* MarsWatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1AC2271FAE500FD1A94 /* MarsWatch.xcdatamodeld */; };
-		63CBB1B02271FAE700FD1A94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63CBB1AF2271FAE700FD1A94 /* Assets.xcassets */; };
 		63CBB1B32271FAE700FD1A94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CBB1B12271FAE700FD1A94 /* LaunchScreen.storyboard */; };
 		63CBB1BE2271FAE700FD1A94 /* MarsWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1BD2271FAE700FD1A94 /* MarsWatchTests.swift */; };
 		63CBB1C92271FAE700FD1A94 /* MarsWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB1C82271FAE700FD1A94 /* MarsWatchUITests.swift */; };
@@ -94,7 +93,6 @@
 		63CBB1A72271FAE500FD1A94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63CBB1AA2271FAE500FD1A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63CBB1AD2271FAE500FD1A94 /* MarsWatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarsWatch.xcdatamodel; sourceTree = "<group>"; };
-		63CBB1AF2271FAE700FD1A94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63CBB1B22271FAE700FD1A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63CBB1B42271FAE700FD1A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63CBB1B92271FAE700FD1A94 /* MarsWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,7 +194,6 @@
 				63CBB1A52271FAE500FD1A94 /* AppDelegate.swift */,
 				63CBB1A72271FAE500FD1A94 /* ViewController.swift */,
 				63CBB1A92271FAE500FD1A94 /* Main.storyboard */,
-				63CBB1AF2271FAE700FD1A94 /* Assets.xcassets */,
 				63CBB1B12271FAE700FD1A94 /* LaunchScreen.storyboard */,
 				63CBB1B42271FAE700FD1A94 /* Info.plist */,
 				63CBB1AC2271FAE500FD1A94 /* MarsWatch.xcdatamodeld */,
@@ -478,7 +475,6 @@
 			files = (
 				63CBB1B32271FAE700FD1A94 /* LaunchScreen.storyboard in Resources */,
 				63CBB22522734DC100FD1A94 /* PhotosCollectionViewCell.xib in Resources */,
-				63CBB1B02271FAE700FD1A94 /* Assets.xcassets in Resources */,
 				63CBB1AB2271FAE500FD1A94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
