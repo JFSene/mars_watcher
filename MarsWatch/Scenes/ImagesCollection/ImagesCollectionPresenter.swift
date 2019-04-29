@@ -16,6 +16,7 @@ protocol ImagesCollectionPresentationLogic
 {
     func successGetPhotosCollection(response: ImagesCollection.Photos.Response.Success)
     func failureGetPhotosCollection(response: ImagesCollection.Photos.Response.Failure)
+    func presenterShowDetails(response: ImagesCollection.ShowDetails.Response)
 }
 
 class ImagesCollectionPresenter: ImagesCollectionPresentationLogic
@@ -30,7 +31,8 @@ class ImagesCollectionPresenter: ImagesCollectionPresentationLogic
     let photos = response.photos.compactMap {
         ImagesCollection.Photos.ViewModel.PhotosDisplay (
             camera: $0.camera,
-            imgSrc: $0.imgSrc
+            imgSrc: $0.imgSrc,
+            rover: $0.rover
         )
     }
     let vm = ImagesCollection.Photos.ViewModel.Success(items: photos)
@@ -39,6 +41,11 @@ class ImagesCollectionPresenter: ImagesCollectionPresentationLogic
     
    func failureGetPhotosCollection(response: ImagesCollection.Photos.Response.Failure) {
     let vm = ImagesCollection.Photos.ViewModel.Failure(message: response.error.localizedDescription)
-    self.viewController?.failuteGetPhotosCollection(response: vm)
+    self.viewController?.failureGetPhotosCollection(response: vm)
+    }
+    
+    func presenterShowDetails(response: ImagesCollection.ShowDetails.Response) {
+        let viewModel = ImagesCollection.ShowDetails.ViewModel()
+        viewController?.showDetails(response: viewModel)
     }
 }

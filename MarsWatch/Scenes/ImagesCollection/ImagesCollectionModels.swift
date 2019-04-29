@@ -33,6 +33,7 @@ enum ImagesCollection
             struct PhotosDisplay {
                 let camera: PhotoCamera?    
                 let imgSrc: String?
+                let rover: Rover?
             }
             
             struct Success {
@@ -44,5 +45,16 @@ enum ImagesCollection
             }
             
         }
+    }
+    
+    enum ShowDetails {
+        struct Request {
+            var imgName: PhotoCamera
+            var image: String
+        }
+        
+        struct Response { }
+        
+        struct ViewModel { }
     }
 }

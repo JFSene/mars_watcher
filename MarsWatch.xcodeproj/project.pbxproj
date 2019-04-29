@@ -44,6 +44,26 @@
 		63CBB21822721C7200FD1A94 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB21622721C7200FD1A94 /* WebService.swift */; };
 		63CBB21A22721CF900FD1A94 /* PhotosWebSerivce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB21922721CF900FD1A94 /* PhotosWebSerivce.swift */; };
 		63CBB21B22721CF900FD1A94 /* PhotosWebSerivce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB21922721CF900FD1A94 /* PhotosWebSerivce.swift */; };
+		63CBB21E22734D1C00FD1A94 /* ImagesCollection+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB21D22734D1C00FD1A94 /* ImagesCollection+CollectionView.swift */; };
+		63CBB21F22734D1C00FD1A94 /* ImagesCollection+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB21D22734D1C00FD1A94 /* ImagesCollection+CollectionView.swift */; };
+		63CBB22322734DC100FD1A94 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB22122734DC100FD1A94 /* PhotosCollectionViewCell.swift */; };
+		63CBB22422734DC100FD1A94 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB22122734DC100FD1A94 /* PhotosCollectionViewCell.swift */; };
+		63CBB22522734DC100FD1A94 /* PhotosCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63CBB22222734DC100FD1A94 /* PhotosCollectionViewCell.xib */; };
+		63CBB22622734DC100FD1A94 /* PhotosCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63CBB22222734DC100FD1A94 /* PhotosCollectionViewCell.xib */; };
+		63CBB22822734EC400FD1A94 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB22722734EC400FD1A94 /* UIView.swift */; };
+		63CBB22922734EC400FD1A94 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB22722734EC400FD1A94 /* UIView.swift */; };
+		63CBB2312273734400FD1A94 /* ImageDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB22B2273734400FD1A94 /* ImageDetailsPresenter.swift */; };
+		63CBB2322273734400FD1A94 /* ImageDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB22B2273734400FD1A94 /* ImageDetailsPresenter.swift */; };
+		63CBB2332273734400FD1A94 /* ImageDetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB22C2273734400FD1A94 /* ImageDetailsWorker.swift */; };
+		63CBB2342273734400FD1A94 /* ImageDetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB22C2273734400FD1A94 /* ImageDetailsWorker.swift */; };
+		63CBB2352273734400FD1A94 /* ImageDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB22D2273734400FD1A94 /* ImageDetailsRouter.swift */; };
+		63CBB2362273734400FD1A94 /* ImageDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB22D2273734400FD1A94 /* ImageDetailsRouter.swift */; };
+		63CBB2372273734400FD1A94 /* ImageDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB22E2273734400FD1A94 /* ImageDetailsModels.swift */; };
+		63CBB2382273734400FD1A94 /* ImageDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB22E2273734400FD1A94 /* ImageDetailsModels.swift */; };
+		63CBB2392273734400FD1A94 /* ImageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB22F2273734400FD1A94 /* ImageDetailsViewController.swift */; };
+		63CBB23A2273734400FD1A94 /* ImageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB22F2273734400FD1A94 /* ImageDetailsViewController.swift */; };
+		63CBB23B2273734400FD1A94 /* ImageDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB2302273734400FD1A94 /* ImageDetailsInteractor.swift */; };
+		63CBB23C2273734400FD1A94 /* ImageDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB2302273734400FD1A94 /* ImageDetailsInteractor.swift */; };
 		BC48CBE7A3C4020AF2279CAE /* Pods_MarsWatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBBE5CA5183ED23313D3406 /* Pods_MarsWatchTests.framework */; };
 		FD35FF6A1069A925B1972B05 /* Pods_MarsWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C96B3C08453D562D2AD3A3 /* Pods_MarsWatch.framework */; };
 /* End PBXBuildFile section */
@@ -97,6 +117,16 @@
 		63CBB21222721C3000FD1A94 /* GenericRequestRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericRequestRetrier.swift; sourceTree = "<group>"; };
 		63CBB21622721C7200FD1A94 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		63CBB21922721CF900FD1A94 /* PhotosWebSerivce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosWebSerivce.swift; sourceTree = "<group>"; };
+		63CBB21D22734D1C00FD1A94 /* ImagesCollection+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagesCollection+CollectionView.swift"; sourceTree = "<group>"; };
+		63CBB22122734DC100FD1A94 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		63CBB22222734DC100FD1A94 /* PhotosCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosCollectionViewCell.xib; sourceTree = "<group>"; };
+		63CBB22722734EC400FD1A94 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		63CBB22B2273734400FD1A94 /* ImageDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsPresenter.swift; sourceTree = "<group>"; };
+		63CBB22C2273734400FD1A94 /* ImageDetailsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsWorker.swift; sourceTree = "<group>"; };
+		63CBB22D2273734400FD1A94 /* ImageDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsRouter.swift; sourceTree = "<group>"; };
+		63CBB22E2273734400FD1A94 /* ImageDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsModels.swift; sourceTree = "<group>"; };
+		63CBB22F2273734400FD1A94 /* ImageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewController.swift; sourceTree = "<group>"; };
+		63CBB2302273734400FD1A94 /* ImageDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsInteractor.swift; sourceTree = "<group>"; };
 		8786670264C82D381D07CCE8 /* Pods-MarsWatchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsWatchUITests.debug.xcconfig"; path = "Target Support Files/Pods-MarsWatchUITests/Pods-MarsWatchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9BBBE5CA5183ED23313D3406 /* Pods_MarsWatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsWatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C158953F794AD002EEBDB7DB /* Pods-MarsWatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsWatchTests.debug.xcconfig"; path = "Target Support Files/Pods-MarsWatchTests/Pods-MarsWatchTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -195,6 +225,7 @@
 		63CBB1D62271FC3800FD1A94 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				63CBB22A2273732D00FD1A94 /* ImageDetails */,
 				63CBB1D72271FC4400FD1A94 /* ImagesCollection */,
 			);
 			path = Scenes;
@@ -203,6 +234,7 @@
 		63CBB1D72271FC4400FD1A94 /* ImagesCollection */ = {
 			isa = PBXGroup;
 			children = (
+				63CBB21C22734CE100FD1A94 /* Views */,
 				63CBB1EA2271FEE400FD1A94 /* ImagesCollectionPresenter.swift */,
 				63CBB1EB2271FEE400FD1A94 /* ImagesCollectionWorker.swift */,
 				63CBB1EC2271FEE400FD1A94 /* ImagesCollectionRouter.swift */,
@@ -217,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				63CBB1FD22721A2400FD1A94 /* UserDefaults+Properties.swift */,
+				63CBB22722734EC400FD1A94 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -279,6 +312,37 @@
 				63CBB21922721CF900FD1A94 /* PhotosWebSerivce.swift */,
 			);
 			path = WebService;
+			sourceTree = "<group>";
+		};
+		63CBB21C22734CE100FD1A94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB22022734DA500FD1A94 /* Cell */,
+				63CBB21D22734D1C00FD1A94 /* ImagesCollection+CollectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63CBB22022734DA500FD1A94 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB22122734DC100FD1A94 /* PhotosCollectionViewCell.swift */,
+				63CBB22222734DC100FD1A94 /* PhotosCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		63CBB22A2273732D00FD1A94 /* ImageDetails */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB22B2273734400FD1A94 /* ImageDetailsPresenter.swift */,
+				63CBB22C2273734400FD1A94 /* ImageDetailsWorker.swift */,
+				63CBB22D2273734400FD1A94 /* ImageDetailsRouter.swift */,
+				63CBB22E2273734400FD1A94 /* ImageDetailsModels.swift */,
+				63CBB22F2273734400FD1A94 /* ImageDetailsViewController.swift */,
+				63CBB2302273734400FD1A94 /* ImageDetailsInteractor.swift */,
+			);
+			path = ImageDetails;
 			sourceTree = "<group>";
 		};
 		8E1A5B6E4E7F38A93A1D0F7B /* Frameworks */ = {
@@ -413,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63CBB1B32271FAE700FD1A94 /* LaunchScreen.storyboard in Resources */,
+				63CBB22522734DC100FD1A94 /* PhotosCollectionViewCell.xib in Resources */,
 				63CBB1B02271FAE700FD1A94 /* Assets.xcassets in Resources */,
 				63CBB1AB2271FAE500FD1A94 /* Main.storyboard in Resources */,
 			);
@@ -422,6 +487,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63CBB22622734DC100FD1A94 /* PhotosCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,9 +604,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63CBB2372273734400FD1A94 /* ImageDetailsModels.swift in Sources */,
+				63CBB22822734EC400FD1A94 /* UIView.swift in Sources */,
+				63CBB2312273734400FD1A94 /* ImageDetailsPresenter.swift in Sources */,
+				63CBB2332273734400FD1A94 /* ImageDetailsWorker.swift in Sources */,
+				63CBB2392273734400FD1A94 /* ImageDetailsViewController.swift in Sources */,
+				63CBB21E22734D1C00FD1A94 /* ImagesCollection+CollectionView.swift in Sources */,
 				63CBB1FA2271FEE400FD1A94 /* ImagesCollectionInteractor.swift in Sources */,
 				63CBB20822721AEB00FD1A94 /* CodableParser.swift in Sources */,
 				63CBB1F82271FEE400FD1A94 /* ImagesCollectionViewController.swift in Sources */,
+				63CBB23B2273734400FD1A94 /* ImageDetailsInteractor.swift in Sources */,
 				63CBB1F02271FEE400FD1A94 /* ImagesCollectionPresenter.swift in Sources */,
 				63CBB20D22721BC100FD1A94 /* GenericRouterEnum.swift in Sources */,
 				63CBB1F62271FEE400FD1A94 /* ImagesCollectionModels.swift in Sources */,
@@ -554,6 +627,8 @@
 				63CBB1FE22721A2400FD1A94 /* UserDefaults+Properties.swift in Sources */,
 				63CBB1AE2271FAE500FD1A94 /* MarsWatch.xcdatamodeld in Sources */,
 				63CBB1A62271FAE500FD1A94 /* AppDelegate.swift in Sources */,
+				63CBB2352273734400FD1A94 /* ImageDetailsRouter.swift in Sources */,
+				63CBB22322734DC100FD1A94 /* PhotosCollectionViewCell.swift in Sources */,
 				63CBB21A22721CF900FD1A94 /* PhotosWebSerivce.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,16 +641,25 @@
 				63CBB20922721AEB00FD1A94 /* CodableParser.swift in Sources */,
 				63CBB21822721C7200FD1A94 /* WebService.swift in Sources */,
 				63CBB1FB2271FEE400FD1A94 /* ImagesCollectionInteractor.swift in Sources */,
+				63CBB21F22734D1C00FD1A94 /* ImagesCollection+CollectionView.swift in Sources */,
 				63CBB1F32271FEE400FD1A94 /* ImagesCollectionWorker.swift in Sources */,
+				63CBB2322273734400FD1A94 /* ImageDetailsPresenter.swift in Sources */,
 				63CBB1F12271FEE400FD1A94 /* ImagesCollectionPresenter.swift in Sources */,
 				63CBB1F72271FEE400FD1A94 /* ImagesCollectionModels.swift in Sources */,
 				63CBB1F52271FEE400FD1A94 /* ImagesCollectionRouter.swift in Sources */,
+				63CBB2382273734400FD1A94 /* ImageDetailsModels.swift in Sources */,
 				63CBB1F92271FEE400FD1A94 /* ImagesCollectionViewController.swift in Sources */,
 				63CBB1BE2271FAE700FD1A94 /* MarsWatchTests.swift in Sources */,
 				63CBB21122721BE900FD1A94 /* GenericRequestAdapter.swift in Sources */,
 				63CBB20E22721BC100FD1A94 /* GenericRouterEnum.swift in Sources */,
+				63CBB2362273734400FD1A94 /* ImageDetailsRouter.swift in Sources */,
+				63CBB2342273734400FD1A94 /* ImageDetailsWorker.swift in Sources */,
+				63CBB23A2273734400FD1A94 /* ImageDetailsViewController.swift in Sources */,
 				63CBB21B22721CF900FD1A94 /* PhotosWebSerivce.swift in Sources */,
+				63CBB23C2273734400FD1A94 /* ImageDetailsInteractor.swift in Sources */,
+				63CBB22422734DC100FD1A94 /* PhotosCollectionViewCell.swift in Sources */,
 				63CBB1FF22721A2400FD1A94 /* UserDefaults+Properties.swift in Sources */,
+				63CBB22922734EC400FD1A94 /* UIView.swift in Sources */,
 				63CBB21422721C3000FD1A94 /* GenericRequestRetrier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

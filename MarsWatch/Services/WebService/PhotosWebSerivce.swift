@@ -70,7 +70,6 @@ extension Webservice.GetPhotos {
                     do {
                         let parsedResult = try
                             CodableParser<PhotosModel>.parse(dict: response.result.value)
-                        print(parsedResult.photos)
                         seal.fulfill(parsedResult.photos!)
                     }
                     catch let error {

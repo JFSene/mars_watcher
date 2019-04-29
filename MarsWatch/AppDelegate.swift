@@ -17,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //To change Navigation Bar Background Color
+        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.0875858739, green: 0.1649460793, blue: 0.3257473111, alpha: 1)
+        //To change Back button title & icon color
+        UINavigationBar.appearance().tintColor = UIColor.white
+        //To change Navigation Bar Title Color
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
         return true
     }
 

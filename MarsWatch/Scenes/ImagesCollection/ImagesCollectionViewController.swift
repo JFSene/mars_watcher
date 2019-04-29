@@ -12,11 +12,13 @@
 
 import UIKit
 import SDWebImage
+import SVProgressHUD
 
 protocol ImagesCollectionDisplayLogic: class
 {
     func successGetPhotosCollection(response: ImagesCollection.Photos.ViewModel.Success)
-    func failuteGetPhotosCollection(response: ImagesCollection.Photos.ViewModel.Failure)
+    func failureGetPhotosCollection(response: ImagesCollection.Photos.ViewModel.Failure)
+    func showDetails(response: ImagesCollection.ShowDetails.ViewModel)
 }
 
 class ImagesCollectionViewController: UIViewController, ImagesCollectionDisplayLogic
@@ -26,6 +28,14 @@ class ImagesCollectionViewController: UIViewController, ImagesCollectionDisplayL
     var router: (NSObjectProtocol & ImagesCollectionRoutingLogic & ImagesCollectionDataPassing)?
     var photosCollection = [ImagesCollection.Photos.ViewModel.PhotosDisplay]()
     
+    enum Rovers: String {
+        case Curiosity = "curiosity"
+        case Opportunity = "opportunity"
+        case Spirit = "spirit"
+    }
+    
+    @IBOutlet weak var photosCollectionView: UICollectionView!
+    @IBOutlet weak var warningLabel: UILabel!
     // MARK: Object lifecycle
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -74,14 +84,13 @@ class ImagesCollectionViewController: UIViewController, ImagesCollectionDisplayL
     override func viewDidLoad()
     {
         super.viewDidLoad()
-       
-        getPhotoCollection(earthDate: "2015-6-3", rover: "curiosity")
+        
+       photosCollectionView.register(UINib(nibName: "PhotosCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "photosCell")
+        getPhotoCollection(earthDate: "2015-6-3", rover: .Curiosity)
     }
     
     // MARK: Do something
     @IBOutlet weak var segControl: UISegmentedControl!
-    @IBOutlet weak var textLabel: UILabel!
-    @IBOutlet weak var marsImage: UIImageView!
     
     
     
@@ -89,35 +98,59 @@ class ImagesCollectionViewController: UIViewController, ImagesCollectionDisplayL
     @IBAction func indexChange(_ sender: UISegmentedControl) {
         switch segControl.selectedSegmentIndex {
         case 0:
-            getPhotoCollection(earthDate: "2015-6-3", rover: "curiosity")
+            getPhotoCollection(earthDate: "2015-6-3", rover: .Curiosity)
         case 1:
-            getPhotoCollection(earthDate: "2015-6-3", rover: "opportunity")
+            getPhotoCollection(earthDate: "2015-6-3", rover: .Opportunity)
         case 2:
-            getPhotoCollection(earthDate: "2015-9-10", rover: "spirit")
+            getPhotoCollection(earthDate: "2006-10-27", rover: .Spirit)
         default:
             break
         }
     }
     
-    func getPhotoCollection(earthDate: String, rover: String) {
+    func getPhotoCollection(earthDate: String, rover: Rovers) {
+        showSpinner()
+        photosCollection = []
+        photosCollectionView.reloadData()
         let request = ImagesCollection.Photos.Request()
-        interactor?.getPhotos(request: request, earthDate: earthDate, rover: rover)
+        interactor?.getPhotos(request: request, earthDate: earthDate, rover: rover.rawValue)
     }
     
     
     func successGetPhotosCollection(response: ImagesCollection.Photos.ViewModel.Success) {
         photosCollection = response.items
-        textLabel.text = response.items.isEmpty ? "Nothing to Show" :  response.items[0].camera?.fullName
-        
-        marsImage.sd_setImage(with: URL(string: response.items.isEmpty ? "" : response.items[0].imgSrc!), placeholderImage: UIImage(named: "character"))
-
         print(photosCollection)
+        photosCollectionView.reloadData()
+        SVProgressHUD.dismiss()
     }
     
-    func failuteGetPhotosCollection(response: ImagesCollection.Photos.ViewModel.Failure) {
+    
+    func failureGetPhotosCollection(response: ImagesCollection.Photos.ViewModel.Failure) {
         let alert = UIAlertController(title: "Alerta!", message: "Houve um erro ao efetuar o donwnload das imagens, verifique sua conexão com a internet e tente novamente.", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okAction)
-        present(alert, animated: true, completion: nil)
+        present(alert, animated: true) {
+            self.errorScene()
+        }
+        SVProgressHUD.dismiss() 
+    }
+    
+    func errorScene() {
+        photosCollectionView.isHidden = true
+        warningLabel.text = "Tente novamente em alguns minutos."
+    }
+    
+    func routToDetails(imgName: PhotoCamera, image: String) {
+        let request = ImagesCollection.ShowDetails.Request(imgName: imgName, image: image)
+        interactor?.showDetails(request: request, imgSrcc: image, imgName: imgName.fullName!)
+    }
+    
+    func showDetails(response: ImagesCollection.ShowDetails.ViewModel) {
+        router?.routeToDetails(segue: nil)
+    }
+    
+    func showSpinner(){
+        SVProgressHUD.setDefaultAnimationType(.native)
+        SVProgressHUD.show()
     }
 }

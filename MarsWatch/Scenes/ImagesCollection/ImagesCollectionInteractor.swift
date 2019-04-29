@@ -15,21 +15,27 @@ import UIKit
 protocol ImagesCollectionBusinessLogic
 {
     func getPhotos(request: ImagesCollection.Photos.Request, earthDate: String, rover: String)
+    func showDetails(request: ImagesCollection.ShowDetails.Request, imgSrcc:String, imgName: String)
 }
 
 protocol ImagesCollectionDataStore
 {
     var photosCollection: [Photo] { get }
+    var image: String { get set }
+    var imgSrc: String { get set }
 
 }
 
 class ImagesCollectionInteractor: ImagesCollectionBusinessLogic, ImagesCollectionDataStore
 {
+   
     
-    //VAR`s
+     //VAR`s
   var presenter: ImagesCollectionPresentationLogic?
   var worker: ImagesCollectionWorker?
   var photosCollection: [Photo] = []
+    var imgSrc: String = ""
+    var image: String = ""
   // MARK: Do something
   
   func getPhotos(request: ImagesCollection.Photos.Request, earthDate: String, rover: String)
@@ -47,4 +53,11 @@ class ImagesCollectionInteractor: ImagesCollectionBusinessLogic, ImagesCollectio
             
     }
   }
+    
+    func showDetails(request: ImagesCollection.ShowDetails.Request, imgSrcc:String, imgName: String) {
+        image = imgName
+        imgSrc = imgSrcc
+        let response = ImagesCollection.ShowDetails.Response()
+        presenter?.presenterShowDetails(response: response)
+    }
 }
